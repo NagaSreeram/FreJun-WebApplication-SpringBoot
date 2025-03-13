@@ -1,5 +1,9 @@
 package com.example.demo.Repository;
 
-public interface BerthAllocationRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.Models.BerthAllocation;
+
+public interface BerthAllocationRepository extends JpaRepository<BerthAllocation, String> {
 
 }

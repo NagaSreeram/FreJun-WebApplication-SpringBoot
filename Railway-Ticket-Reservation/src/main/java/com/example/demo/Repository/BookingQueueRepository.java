@@ -1,5 +1,9 @@
 package com.example.demo.Repository;
 
-public interface BookingQueueRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.Models.BookingQueue;
+
+public interface BookingQueueRepository extends JpaRepository<BookingQueue, String> {
 
 }
